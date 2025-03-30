@@ -135,13 +135,13 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 1440px;
 }
 .hero-title {
   font-weight: 700;
@@ -197,8 +197,26 @@ button {
   display: flex;
   gap: 24px;
 }
+
 .about-item {
   flex-basis: calc((100% - 72px) / 4);
+  width: 264px;
+}
+
+.about-item:last-child {
+  margin-right: 0;
+}
+
+.about-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  height: 112px;
+  max-width: 100%;
 }
 .about-title {
   font-weight: 500;
